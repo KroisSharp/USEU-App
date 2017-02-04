@@ -1,30 +1,39 @@
 ﻿<Page
-    x:Class="US_unit_To_EU.View.Weight"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:US_unit_To_EU.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:US_unit_To_EU.ViewModel"
+    x:Class="US_unit_To_EU.View.Weight"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        
 
-        
-        
-        
+
+
+
+
+
+        <Grid.DataContext>
+            <ViewModel:WeightViewModel/>
+        </Grid.DataContext>
+
+
+
+
+
+
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto" >
-            <TextBox Name="SkrivOunce" PlaceholderText="Skriv Ounce" />
-            <TextBlock Name="ResultatOunch" Text="Resultat" />
-            <TextBox Name="SkirvGallon" PlaceholderText="Skriv Gallon" Margin="0,15,0,0"/>
-            <TextBlock Name="ResultatGallon" Text="Resultat" />
+            <TextBox x:Name="SkrivOunce" PlaceholderText="Skriv Ounce" Text="{Binding Weightprop.Ounce, Mode=TwoWay}" />
+            <TextBlock x:Name="ResultatOunch" Text="{Binding HenterOunce, Mode=TwoWay}" />
+
         </StackPanel>
-        
-        
-        
+
+
+
     </Grid>
 </Page>

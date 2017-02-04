@@ -10,9 +10,8 @@ namespace US_unit_To_EU.Model
     {
 
         //props
-        public decimal Ounce { get; set; }
-        public decimal Gallon { get; set; }
-        public decimal Cup { get; set; }
+        public double Ounce { get; set; }
+
 
         //ctor
         public Weight()

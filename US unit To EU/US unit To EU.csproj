@@ -95,10 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Distance.cs" />
     <Compile Include="Model\Weight.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\DistanceViewModel.cs" />
     <Compile Include="ViewModel\WeightViewModel.cs" />
     <Compile Include="View\Distance.xaml.cs">
       <DependentUpon>Distance.xaml</DependentUpon>
