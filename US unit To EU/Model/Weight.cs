@@ -15,11 +15,10 @@ namespace US_unit_To_EU.Model
         public decimal Cup { get; set; }
 
         //ctor
-        public Distance()
+        public Weight()
         {
-
+            
         }
-
 
 
     }

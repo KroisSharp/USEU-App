@@ -8,7 +8,14 @@ namespace US_unit_To_EU.ViewModel
 {
     class WeightViewModel
     {
+        //prop
         public Model.Weight Weightprop { get; set; }
 
+
+        //ctor
+        public WeightViewModel()
+        {
+            Weightprop = new Model.Weight();
+        }
     }
 }
