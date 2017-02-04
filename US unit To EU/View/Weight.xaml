@@ -10,9 +10,21 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
+        
+
+        
+        
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto" >
+            <TextBox Name="SkrivOunce" PlaceholderText="Skriv Ounce" />
+            <TextBlock Name="ResultatOunch" Text="Resultat" />
+            <TextBox Name="SkirvGallon" PlaceholderText="Skriv Gallon" Margin="0,15,0,0"/>
+            <TextBlock Name="ResultatGallon" Text="Resultat" />
+        </StackPanel>
+        
+        
         
     </Grid>
 </Page>
