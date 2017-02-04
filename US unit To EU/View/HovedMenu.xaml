@@ -35,18 +35,7 @@
                        FontWeight="Bold"
                        Margin="20,5,0,0"/>
 
-            <Button Name="SearchButton" 
-                    RelativePanel.AlignRightWithPanel="True"
-                    FontFamily="Segoe MDL2 Assets"
-                    FontSize="36" 
-                    Content="&#xE1A3;" />
-
-            <TextBox Name="SearchTextBox" 
-                     RelativePanel.LeftOf="SearchButton" 
-                     Height="48" 
-                     Width="200"
-                     FontSize="24"
-                     PlaceholderText="Search" />
+ 
         </RelativePanel>
 
         <SplitView Grid.Row="1" 
@@ -59,14 +48,14 @@
                          SelectionChanged="ListBox_SelectionChanged">
                     <ListBoxItem Name="Financial">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Financial</TextBlock>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE7fd;" />
+                            <TextBlock FontSize="24" Margin="20,0,0,0">Distance</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Food">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;" />
-                            <TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE92f;" />
+                            <TextBlock FontSize="24" Margin="20,0,0,0">Weight</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
